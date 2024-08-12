@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div className="bg-[#ebebeb] h-full relative w-full">
       <div className="absolute h-[100vh] w-full top-0">
-        <div className="md:container container mx-auto lg:py-10 pt-[10rem] px-8 lg:px-24 w-full flex lg:flex-row flex-col items-center justify-between h-full">
+        <div className="md:container container mx-auto lg:py-10 pt-[8rem] px-8 lg:px-24 w-full flex lg:flex-row flex-col items-center justify-between h-full">
           <div className="lg:w-[40%] lg:text-start text-center flex gap-y-4 lg:gap-y-2 flex-col">
             <span className="text-[#3a0ca3] md:text-3xl text-4xl lg:text-6xl font-bold ">
               {" "}
@@ -30,12 +30,12 @@ const HeroSection = () => {
             </span>
           </div>
 
-          <div className="lg:w-1/2 h-[55%]">
+          <div className="lg:w-1/2 h-[55%] pt-4 lg:pt-0">
             <div className="lg:absolute flex items-center group top-[20%] cursor-pointer duration-200 transition-all ease-in hover:bg-[#3a0ca3] hover:text-[#fff] text-[#3a0ca3] py-4 px-3 left-1/2 right-0 h-[50px] w-fit">
               <img
                 src={lightIcon}
                 alt="light"
-                className="w-[80px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
+                className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
               />
               <ReactTyped
                 strings={["We cultivate tech talent, one mind at a time"]}
@@ -48,7 +48,7 @@ const HeroSection = () => {
             <img
                 src={lightIcon}
                 alt="light"
-                className="w-[80px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
+                className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
               />
               <ReactTyped
                 strings={["Innovate, collaborate, educate"]}
@@ -61,7 +61,7 @@ const HeroSection = () => {
             <img
                 src={lightIcon}
                 alt="light"
-                className="w-[80px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
+                className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
               />
               <ReactTyped
                 strings={["Unleashing potential, forging connections"]}
@@ -74,7 +74,7 @@ const HeroSection = () => {
             <img
                 src={lightIcon}
                 alt="light"
-                className="w-[80px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
+                className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
               />
               <ReactTyped
                 strings={[
