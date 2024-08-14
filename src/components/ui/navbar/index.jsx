@@ -15,7 +15,7 @@ const Navbar = () => {
         >
           <img
             src="/logo2.png"
-            className="w-[80px]"
+            className="md:w-[80px] w-[60px]"
             alt="ets"
           />
         </Link>
