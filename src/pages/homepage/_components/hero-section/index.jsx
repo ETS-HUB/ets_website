@@ -12,11 +12,12 @@ const HeroSection = () => {
           <div className="lg:w-[40%] lg:text-start text-center flex gap-y-4 lg:gap-y-2 flex-col">
             <span className="text-[#3a0ca3] md:text-3xl text-4xl lg:text-6xl font-bold ">
               {" "}
-              Education <br className="lg:block hidden" /> Technology{" "}
-              <br className="lg:block hidden" /> Summit
+               
+              Bridging Tech <br className="lg:block hidden" /> and{" "}
+              <br className="lg:block hidden" /> Education Landscapes
             </span>
             <span className="text-[#444] md:text-base text-sm">
-              We stand as a vibrant community that delves into innovative
+              ETS stands as a vibrant community that delves into innovative
               solutions where <span className="font-semibold">education, entrepreneurship, and technology </span>
               converge. We delve deeply into pioneering methodologies where the
               realm of technology intersects with education, showcasing

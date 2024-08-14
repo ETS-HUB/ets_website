@@ -14,8 +14,8 @@ const Navbar = () => {
           className="font-semibold text-lg lg:text-3xl text-[#3745c0]"
         >
           <img
-            src="/logo.png"
-            className="w-[50px]"
+            src="/logo2.png"
+            className="w-[80px]"
             alt="ets"
           />
         </Link>
