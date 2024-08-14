@@ -8,25 +8,26 @@ const HeroSection = () => {
   return (
     <div className="bg-[#ebebeb] h-full relative w-full">
       <div className="absolute h-[100vh] w-full top-0">
-        <div className="md:container container mx-auto lg:py-10 pt-[8rem] px-8 lg:px-24 w-full flex lg:flex-row flex-col items-center justify-between h-full">
+        <div className="md:container container mx-auto lg:py-10 pt-[6rem] px-8 lg:px-24 w-full flex lg:flex-row flex-col items-center justify-between h-full">
           <div className="lg:w-[40%] lg:text-start text-center flex gap-y-4 lg:gap-y-2 flex-col">
             <span className="text-[#3a0ca3] md:text-3xl text-4xl lg:text-6xl font-bold ">
               {" "}
-              Education <br className="lg:block hidden" /> Technology <br className="lg:block hidden" /> Summit
+              Education <br className="lg:block hidden" /> Technology{" "}
+              <br className="lg:block hidden" /> Summit
             </span>
             <span className="text-[#444] md:text-base text-sm">
-              In a world where challenges abound, creative problem-solving is
-              our most powerful tool. As we've evolved from manual labor to
-              computers to AI, the potential for innovation has exploded. Now,
-              it's time to harness that potential to transform
-             
+              We stand as a vibrant community that delves into innovative
+              solutions where <span className="font-semibold">education, entrepreneurship, and technology </span>
+              converge. We delve deeply into pioneering methodologies where the
+              realm of technology intersects with education, showcasing
+              inventive resources and platforms that empower both educators and
+              entrepreneurs to reshape and enhance learning journeys.
             </span>
             <span className="text-[#444] lg:hidden block md:text-base text-sm">
-              In a world where challenges abound, creative problem-solving is
-              our most powerful tool. As we've evolved from manual labor to
-              computers to AI, the potential for innovation has exploded. Now,
-              it's time to harness that potential to transform
-             
+              By fostering collaboration among educators, entrepreneurs, and
+              technologists, ETS drives forward a future where learning is not
+              just transformed but revolutionized, opening new horizons for
+              knowledge dissemination and societal advancement.
             </span>
           </div>
 
@@ -45,7 +46,7 @@ const HeroSection = () => {
               ></ReactTyped>
             </div>
             <div className="lg:absolute left-[70vw] top-[30%] group flex items-center duration-200 h-[50px] right-0 w-fit cursor-pointer transition-all ease-in hover:bg-[#3a0ca3] hover:text-[#fff] text-[#3a0ca3] py-4 px-3">
-            <img
+              <img
                 src={lightIcon}
                 alt="light"
                 className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
@@ -58,7 +59,7 @@ const HeroSection = () => {
               ></ReactTyped>
             </div>
             <div className="lg:absolute left-[55%] top-[60%] right-0 w-fit group flex items-center duration-200 h-[50px] cursor-pointer transition-all ease-in hover:bg-[#3a0ca3] hover:text-[#fff] text-[#3a0ca3] py-4 px-3">
-            <img
+              <img
                 src={lightIcon}
                 alt="light"
                 className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
@@ -71,7 +72,7 @@ const HeroSection = () => {
               ></ReactTyped>
             </div>
             <div className="lg:absolute left-[60%] top-[45%] right-0 w-fit group flex items-center duration-200 h-[50px] cursor-pointer transition-all ease-in hover:bg-[#3a0ca3] hover:text-[#fff] text-[#3a0ca3] py-4 px-3">
-            <img
+              <img
                 src={lightIcon}
                 alt="light"
                 className="md:w-[80px] w-[30px] h-[40px] group-hover:block hidden duration-500 animate-pulse transition-all easein-out"
@@ -87,7 +88,9 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 -z-20 w-full">
         <HeroSlider />
+        </div>
       </div>
     </div>
   );

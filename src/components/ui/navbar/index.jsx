@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-      <div className="container px-10 lg:px-24 md:container mx-auto top-0 z-[999] absolute left-0 right-0 flex h-12 w-full items-center justify-between bg-primary transition-all duration-300 ease-out md:top-0 md:h-14 md:gap-3 lg:h-20 xl:gap-0">
+      <div className="container bg-white px-10 lg:px-24 md:container mx-auto top-0 z-[999] fixed left-0 right-0 flex h-12 w-full items-center justify-between bg-primary transition-all duration-300 ease-out md:top-0 md:h-14 md:gap-3 lg:h-20 xl:gap-0">
         <Link
           to="/"
           className="font-semibold text-lg lg:text-3xl text-[#3745c0]"
