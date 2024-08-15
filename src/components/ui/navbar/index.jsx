@@ -47,12 +47,12 @@ const Navbar = () => {
         </div>
 
         <div className="block cursor-pointer md:hidden">
-          <GiHamburgerMenu color="#ffffff" onClick={() => setToggleMenu(true)} />
+          <GiHamburgerMenu color={`${!scrolled ? '#ffffff' : '#000000'}`} onClick={() => setToggleMenu(true)} />
         </div>
       </div>
       {toggleMenu && (
         <div className="animate-slideBottom fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center gap-20 overflow-hidden bg-primary px-6 pt-6 transition-all duration-150">
-          <div className="flex w-full items-center justify-between">
+          <div className="flex w-full items-center overflow-hidden justify-between">
             <Link
               to="#"
               className="font-semibold text-lg lg:text-3xl text-[#3745c0]"
@@ -104,7 +104,7 @@ const Navbar = () => {
                 children="Sign up"
                 border={"none"}
                 padding={"15px 30px"}
-              />
+              >Join Community</Button>
             </Link>
           </div>
         </div>

@@ -11,15 +11,15 @@ const FirstSection = () => {
       />
       <div className="flex w-full lg:flex-row flex-col gap-6 item-center justify-between">
         <div className="lg:w-1/2">
-          <div className="w-full gap-y-2 flex flex-col justify-start items-start">
+          <div className="w-full gap-y-2 mb-4 flex flex-col justify-start items-start">
             <span className="text-sm uppercase tracking-[4.2px] text-lightblue font-semibold">
               Our mission
             </span>
-            <span className="text-[40px] font-tiro capitalize text-secondary font-semibold">
+            <span className="md:text-[40px] text-2xl font-tiro capitalize text-secondary font-semibold">
               Journey to Impact Lives.
             </span>
           </div>
-          <span className="text-base text-lightgray">
+          <span className="text-sm md:text-base text-lightgray">
             Our aim is to bridge the gap between technology and education,
             fostering a collaborative environment where cutting-edge innovations
             reshape educational practices and extend transformative impact
