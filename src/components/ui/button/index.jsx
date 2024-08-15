@@ -50,8 +50,8 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  border: "1px solid #3a0ca3",
-  backgroundColor: "#3a0ca3",
+  border: "none",
+  backgroundColor: "#4361ee",
   textColor: "#ffffff",
   height: "100%",
   padding: "10px 30px",

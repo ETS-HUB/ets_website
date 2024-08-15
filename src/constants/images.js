@@ -1,5 +1,8 @@
 export { default as lightIcon } from '../assets/light.svg'
 export { default as heroImg } from '../assets/hero.jpg'
+export { default as spiral } from '../assets/images/spiral.png'
+export { default as banner } from '../assets/images/banner.jpg'
+export { default as first_section } from '../assets/images/first-section.jpg'
 
 export { default as first } from '../assets/images/slider/first.jpg'
 export { default as second } from '../assets/images/slider/second.svg'

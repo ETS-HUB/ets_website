@@ -1,25 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "../../";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = useState(false); // initialize togglemenu state to keep track if mobile menu is open
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <div className="w-full">
-      <div className="container bg-white px-10 lg:px-24 md:container mx-auto top-0 z-[999] fixed left-0 right-0 flex h-12 w-full items-center justify-between bg-primary transition-all duration-300 ease-out md:top-0 md:h-14 md:gap-3 lg:h-20 xl:gap-0">
+    <div
+      className={`w-full flex transition-all ease-in duration-300 justify-center items-center z-[999] fixed left-0 right-0 ${
+        scrolled ? "bg-white text-secondary animate-fade" : ""
+      }`}
+    >
+      <div className="conainer  px-10 lg:px-24 md:contaner mx-auto top-0 flex h-12 w-full items-center justify-between transition-all duration-300 ease-out md:top-0 md:h-14 md:gap-3 lg:h-20 xl:gap-0">
         <Link
           to="/"
           className="font-semibold text-lg lg:text-3xl text-[#3745c0]"
         >
-          <img
-            src="/logo2.png"
-            className="md:w-[80px] w-[60px]"
-            alt="ets"
-          />
+          {!scrolled ? <img src="/logowhite.png" className="md:w-[80px] w-[60px]" alt="ets" /> : <img src="/logo2.png" className="md:w-[80px] w-[60px]" alt="ets" />}
         </Link>
-        <div className="hidden items-center justify-center font-medium text-[#3a0ca3] md:flex md:space-x-10 md:text-xs lg:space-x-10 lg:text-base">
+        <div className={`hidden items-center justify-center font-semibold md:flex md:space-x-10 md:text-xs lg:space-x-10 lg:text-base ${scrolled ? 'text-secondary' : 'text-primary'}`}>
           <NavLink to="#">Events</NavLink>
           <NavLink to="#">Support us</NavLink>
           <NavLink to="#">Contact us</NavLink>{" "}
@@ -32,17 +47,17 @@ const Navbar = () => {
         </div>
 
         <div className="block cursor-pointer md:hidden">
-          <GiHamburgerMenu onClick={() => setToggleMenu(true)} />
+          <GiHamburgerMenu color="#ffffff" onClick={() => setToggleMenu(true)} />
         </div>
       </div>
       {toggleMenu && (
-        <div className="animate-slideBottom fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center gap-20 overflow-hidden bg-[#fff] bg-primary px-6 pt-6 transition-all duration-150">
+        <div className="animate-slideBottom fixed left-0 top-0 z-50 flex h-full w-full flex-col items-center gap-20 overflow-hidden bg-primary px-6 pt-6 transition-all duration-150">
           <div className="flex w-full items-center justify-between">
             <Link
               to="#"
               className="font-semibold text-lg lg:text-3xl text-[#3745c0]"
             >
-              Onepay
+               <img src="/logo2.png" className="md:w-[80px] w-[60px]" alt="ets" />
             </Link>
 
             <span

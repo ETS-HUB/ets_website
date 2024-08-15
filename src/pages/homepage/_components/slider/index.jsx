@@ -17,7 +17,7 @@ import {
 
 const HeroSlider = () => {
   return (
-    <div className=" w-full">
+    <div className="absolute h-full -z-10 w-full">
       <Slider width="250px" duration={40}>
         <Slider.Slide>
           <img src={first} className="md:w-5/6 w-[70%]" alt="" />
